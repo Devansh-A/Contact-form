@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: "Shippori Mincho", serif;
+    }
+    .heading1 h1{
+        color: black;
+        font-size: 50px;
+        color: white;
+    }
+    .heading1{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        /* border-radius: 10px; */
+        background-color: #4b4b4b;
+    }
+    .container {
+      display: flex;
+      width: 50%;
+      margin: 30px auto;
+      /* border: 2px solid green; */
+      border-radius: 10px;
+    }
+    .left {
+      box-sizing: border-box;
+      padding: 45px;
+      background-color: #272a34;
+      width: 50%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    h1 {
+      color: white;
+    }
+    form {
+      margin: 20px 0px;
+      font-size: 40px;
+    }
+    .details {
+      padding: 5px;
+    }
+    textarea,
+    input {
+      border: none;
+      background-color: #272a34;
+      /* font-family: "Shippori Mincho", serif; */
+    }
+    textarea {
+      width: 100%;
+      font-size: 20px;
+      padding-top: 10px;
+      outline: none;
+      color: white;
+    }
+    input {
+      width: 100%;
+      font-size: 20px;
+      color: white;
+      outline: none;
+    }
+    .btn {
+      padding: 10px;
+      font-size: 20px;
+      color: white;
+      border-radius: 5px;
+      background-color: #edb90f;
+    }
+    .right {
+        box-sizing: border-box;
+      width: 50%;
+      color: white;
+      background-color: #1c1e25;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 45px;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    .light, .light1{
+        color: gray;
+        font-size: 20px;
+    }
+    .Rdetails{
+        margin: 20px 0px;
+        padding: 5px 0px;
+        font-size: 20px;
+    }
+    .thankyou{
+        width: 50%;
+        text-align: center;
+        margin: 60px auto;
+        font-size: 40px;
+        font-weight: bolder;
+        /* background-color: #edb90f; */
+        padding: 10px;
+        border-radius: 5px;
+    }
+  </style>
+  <body>
+    <div class="heading1">
+        <h1>WRITE US!</h1>
+    </div>
+    <div class="container">
+      <div class="left">
+        <h1>Feel free to Contact Us</h1>
+        <form action="/dev.php">
+          <div class="details">
+            <input type="text" placeholder="Name" />
+            <hr />
+          </div>
+          <div class="details">
+            <input type="email" placeholder="Email" />
+            <hr />
+          </div>
+          <div class="details">
+            <input type="text" placeholder="Subject" />
+            <hr />
+          </div>
+          <div class="details">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <hr />
+          </div>
+          <div class="details">
+            <button class="btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div class="right">
+          <div class="heading">
+          <h2>Contact Information</h2>
+           <span class="light1"> We are open for any suggestion or just to have a chat</span>
+        </div>
+          <div class="Rdetails">Address: <span class="light"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quia repudiandae molestias fuga cumque inventore?</span></div>
+          <div class="Rdetails">Phone: <span class="light">+911000010100</span></div>
+          <div class="Rdetails">Email: <span class="light">xyz@gmail.com</span></div>
+          <div class="Rdetails">Website: <span class="light">sitecontact.com</span></div>
+          <div class="thankyou">
+              Thank You
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
